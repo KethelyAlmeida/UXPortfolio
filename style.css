@@ -1,0 +1,161 @@
+h1 {
+  text-align: center;
+  color: #f6f4f3;
+  font-size: 40px;
+  font-family: century gothic;
+}
+
+p {
+  text-align: center;
+  color: #f6f4f3;
+  font-size: 20px;
+  font-family: century gothic;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #bc8741;
+  width: 50%;
+}
+
+form {
+  width: 600px;
+  margin: 0 auto;
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+label {
+  color: #f6f4f3;
+  font-size: 16px;
+  font-family: century gothic;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  font-family: century gothic;
+  background-color: #d1c8c1;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="password"] {
+  background-color: #d1c8c1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+label[for="genero-masculino"],
+label[for="genero-feminino"],
+label[for="genero-outro"] {
+    margin-top: 14px;
+    font-size: 16px;
+    font-family: "Century Gothic", sans-serif;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px; 
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label[for="genero-masculino"]::before,
+label[for="genero-feminino"]::before,
+label[for="genero-outro"]::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #d1c8c1;
+    border-radius: 50%;
+    border: 2px solid #d1c8c1;
+    margin-right: 8px; 
+    transition: background-color 0.3s, border-color 0.3s;
+}
+input[type="radio"]:checked + label::before {
+    background-color: #C4693E;
+    border-color: #C4693E;
+}
+
+
+input[type="date"] {
+  background-color: #d1c8c1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: century gothic;
+}
+
+body {
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+button {
+  background-color: #C4693E;
+  color: white;
+  padding: 10px 70px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: century gothic;
+  font-weight: 500;
+  position: center;
+}
+
+.alert {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  color: #333;
+  margin-bottom: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  position: relative;
+}
+
+.alert.success {
+  background-color: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: #000;
+}
+
+
+
